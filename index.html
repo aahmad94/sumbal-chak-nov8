@@ -97,17 +97,30 @@
     .jumps a:nth-child(2) { background: #c43d5a; animation-name: glow-rose; }
     .jumps a:nth-child(3) { background: #c46a3a; animation-name: glow-amber; }
     @keyframes glow-teal {
-      0%, 100% { background: #1f8a86; }
-      50% { background: #5ed4ce; }
+      0%, 18%, 100% { background: #1f8a86; }
+      8% { background: #5ed4ce; }
     }
     @keyframes glow-rose {
-      0%, 100% { background: #c43d5a; }
-      50% { background: #ee8fa3; }
+      0%, 22%, 46%, 100% { background: #c43d5a; }
+      32% { background: #ee8fa3; }
     }
     @keyframes glow-amber {
-      0%, 100% { background: #c46a3a; }
-      50% { background: #e8a27a; }
+      0%, 46%, 70%, 100% { background: #c46a3a; }
+      56% { background: #e8a27a; }
     }
+    .to-top { margin: 14px 0 4px; }
+    .to-top a {
+      display: inline-block;
+      font-weight: 800;
+      font-size: 13px;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 999px;
+      padding: 8px 14px;
+    }
+    .to-top.teal a { background: #1f8a86; }
+    .to-top.rose a { background: #c43d5a; }
+    .to-top.amber a { background: #c46a3a; }
     .meta {
       display: flex; flex-wrap: wrap; gap: 8px;
       margin-top: 16px;
@@ -212,7 +225,7 @@
 </head>
 <body>
   <div class="wrap">
-    <header>
+    <header id="top">
       <p class="eyebrow">Young Guns Events · for Subtain</p>
       <h1>Design preferences overview</h1>
       <p class="lede">Sumbal Chak farmhouse, Lahore. Sunday 8 November. Afternoon nikkah for 40–60 guests, evening mehndi for about 250. Two outdoor zones on the same property. Nikkah and mehndi looks are specified separately below. Barat car rental and decoration preferences for 10 November are attached at the bottom.</p>
@@ -285,6 +298,7 @@
         <span class="chip">Flower necklaces + pastel smoke</span>
         <span class="chip">Light speaker music</span>
       </div>
+      <p class="to-top teal"><a href="#top">Return to top</a></p>
     </section>
 
     <section>
@@ -382,6 +396,7 @@
           <tr><td>Sky moment</td><td>Pastel vertical smoke when they exchange flower necklaces on the open nikkah stage after the arch is down</td><td>Copying the pink tunnel; ground fog that hides the couple</td></tr>
         </tbody>
       </table>
+      <p class="to-top teal"><a href="#top">Return to top</a></p>
     </section>
 
     <section class="part part-mehndi" id="mehndi">
@@ -400,6 +415,7 @@
         <span class="chip">DJ still to book</span>
         <span class="chip">No weather canopy</span>
       </div>
+      <p class="to-top rose"><a href="#top">Return to top</a></p>
     </section>
 
     <section>
@@ -575,6 +591,7 @@
           <tr><td>Palette</td><td>This festive scheme, or Young Guns’ proposal in the same register</td><td>Forcing nikkah white onto the mehndi stage</td></tr>
         </tbody>
       </table>
+      <p class="to-top rose"><a href="#top">Return to top</a></p>
     </section>
 
     <section>
@@ -603,6 +620,7 @@
         <span class="chip">Red hood flowers</span>
         <span class="chip">White mirror ribbon</span>
       </div>
+      <p class="to-top amber"><a href="#top">Return to top</a></p>
     </section>
 
     <section>
@@ -646,6 +664,7 @@
         </ul>
       </div>
     </section>
+      <p class="to-top amber"><a href="#top">Return to top</a></p>
 
     <footer>
       Working preferences file for Young Guns Events. Nikkah and mehndi are the 8 November Sumbal Chak looks. Barat car decoration for 10 November is at the bottom, for Subtain.
