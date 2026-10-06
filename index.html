@@ -82,6 +82,18 @@
     }
     .part-mehndi h3 { color: var(--mehndi); }
     .lede { color: var(--muted); margin: 0; max-width: 64ch; font-size: 16px; }
+    .jumps { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .jumps a {
+      font-weight: 800;
+      text-decoration: none;
+      background: #2a2420;
+      color: #fff;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 14px;
+    }
+    .jumps a:nth-child(2) { background: #c43d5a; }
+    .jumps a:nth-child(3) { background: #c46a3a; }
     .meta {
       display: flex; flex-wrap: wrap; gap: 8px;
       margin-top: 16px;
@@ -190,6 +202,11 @@
       <p class="eyebrow">Young Guns Events · for Subtain</p>
       <h1>Design preferences overview</h1>
       <p class="lede">Sumbal Chak farmhouse, Lahore. Sunday 8 November. Afternoon nikkah for 40 guests, evening mehndi for about 200. Two outdoor zones on the same property. Nikkah and mehndi looks are specified separately below. Barat car rental and decoration preferences for 10 November are attached at the bottom.</p>
+      <nav class="jumps" aria-label="Sections">
+        <a href="#nikkah">Nikkah</a>
+        <a href="#mehndi">Mehndi</a>
+        <a href="#barat">Barat</a>
+      </nav>
       <div class="meta">
         <span>Sumbal Chak · Lahore</span>
         <span>8 November</span>
