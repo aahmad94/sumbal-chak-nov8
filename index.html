@@ -82,7 +82,8 @@
     }
     .part-mehndi h3 { color: var(--mehndi); }
     .lede { color: var(--muted); margin: 0; max-width: 64ch; font-size: 16px; }
-    .jumps { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .jump-label { margin: 16px 0 0; font-size: 12px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+    .jumps { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
     .jumps a {
       font-weight: 800;
       text-decoration: none;
@@ -91,13 +92,24 @@
       border-radius: 999px;
       padding: 8px 14px;
       font-size: 14px;
-      animation: jump-glow 2.6s ease-in-out infinite;
+      animation: jump-glow 1.8s ease-in-out infinite;
+      box-shadow: 0 0 0 0 rgba(42, 36, 32, 0.35);
+      will-change: transform, box-shadow;
     }
-    .jumps a:nth-child(2) { background: #c43d5a; animation-delay: 0.3s; }
-    .jumps a:nth-child(3) { background: #c46a3a; animation-delay: 0.6s; }
-    @keyframes jump-glow {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(255, 244, 220, 0.15), 0 0 6px rgba(42, 36, 32, 0.18); }
-      50% { box-shadow: 0 0 0 7px rgba(255, 236, 200, 0.22), 0 0 18px rgba(255, 214, 150, 0.75); }
+    .jumps a:nth-child(1) { animation-name: jump-glow-ink; }
+    .jumps a:nth-child(2) { background: #c43d5a; animation-name: jump-glow-rose; animation-delay: 0.25s; }
+    .jumps a:nth-child(3) { background: #c46a3a; animation-name: jump-glow-amber; animation-delay: 0.5s; }
+    @keyframes jump-glow-ink {
+      0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(42, 36, 32, 0.25), 0 0 0 0 rgba(42, 36, 32, 0.2); }
+      50% { transform: scale(1.06); box-shadow: 0 0 0 8px rgba(42, 36, 32, 0.16), 0 0 22px 4px rgba(42, 36, 32, 0.45); }
+    }
+    @keyframes jump-glow-rose {
+      0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(196, 61, 90, 0.25); }
+      50% { transform: scale(1.06); box-shadow: 0 0 0 8px rgba(196, 61, 90, 0.22), 0 0 22px 4px rgba(196, 61, 90, 0.65); }
+    }
+    @keyframes jump-glow-amber {
+      0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(196, 106, 58, 0.25); }
+      50% { transform: scale(1.06); box-shadow: 0 0 0 8px rgba(196, 106, 58, 0.22), 0 0 22px 4px rgba(196, 106, 58, 0.7); }
     }
     .meta {
       display: flex; flex-wrap: wrap; gap: 8px;
@@ -207,6 +219,7 @@
       <p class="eyebrow">Young Guns Events · for Subtain</p>
       <h1>Design preferences overview</h1>
       <p class="lede">Sumbal Chak farmhouse, Lahore. Sunday 8 November. Afternoon nikkah for 40–60 guests, evening mehndi for about 250. Two outdoor zones on the same property. Nikkah and mehndi looks are specified separately below. Barat car rental and decoration preferences for 10 November are attached at the bottom.</p>
+      <p class="jump-label">Tap a section</p>
       <nav class="jumps" aria-label="Sections">
         <a href="#nikkah">Nikkah</a>
         <a href="#mehndi">Mehndi</a>
