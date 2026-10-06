@@ -91,9 +91,14 @@
       border-radius: 999px;
       padding: 8px 14px;
       font-size: 14px;
+      animation: jump-glow 2.6s ease-in-out infinite;
     }
-    .jumps a:nth-child(2) { background: #c43d5a; }
-    .jumps a:nth-child(3) { background: #c46a3a; }
+    .jumps a:nth-child(2) { background: #c43d5a; animation-delay: 0.3s; }
+    .jumps a:nth-child(3) { background: #c46a3a; animation-delay: 0.6s; }
+    @keyframes jump-glow {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(255, 244, 220, 0.15), 0 0 6px rgba(42, 36, 32, 0.18); }
+      50% { box-shadow: 0 0 0 7px rgba(255, 236, 200, 0.22), 0 0 18px rgba(255, 214, 150, 0.75); }
+    }
     .meta {
       display: flex; flex-wrap: wrap; gap: 8px;
       margin-top: 16px;
@@ -201,7 +206,7 @@
     <header>
       <p class="eyebrow">Young Guns Events · for Subtain</p>
       <h1>Design preferences overview</h1>
-      <p class="lede">Sumbal Chak farmhouse, Lahore. Sunday 8 November. Afternoon nikkah for 40 guests, evening mehndi for about 200. Two outdoor zones on the same property. Nikkah and mehndi looks are specified separately below. Barat car rental and decoration preferences for 10 November are attached at the bottom.</p>
+      <p class="lede">Sumbal Chak farmhouse, Lahore. Sunday 8 November. Afternoon nikkah for 40–60 guests, evening mehndi for about 250. Two outdoor zones on the same property. Nikkah and mehndi looks are specified separately below. Barat car rental and decoration preferences for 10 November are attached at the bottom.</p>
       <nav class="jumps" aria-label="Sections">
         <a href="#nikkah">Nikkah</a>
         <a href="#mehndi">Mehndi</a>
@@ -251,7 +256,7 @@
           <tr>
             <td><strong>Evening</strong></td>
             <td>Mehndi zone</td>
-            <td>200-guest mehndi with a DJ. Optional: walk some nikkah chairs over as extra seating around the vintage tables.</td>
+            <td>About 250-guest mehndi with a DJ. Optional: walk some nikkah chairs over as extra seating around the vintage tables.</td>
           </tr>
         </tbody>
       </table>
@@ -261,9 +266,9 @@
     <section class="part" id="nikkah">
       <p class="eyebrow">Part 1</p>
       <h2>Nikkah</h2>
-      <p class="lede">Own outdoor podium on the farmhouse lawn. About 40 guests. White + wood garden ceremony. Open to the garden and sky — no fabric canopy.</p>
+      <p class="lede">Own outdoor podium on the farmhouse lawn. About 40–60 guests. White + wood garden ceremony. Open to the garden and sky — no fabric canopy.</p>
       <div class="chips">
-        <span class="chip">40 guests</span>
+        <span class="chip">40–60 guests</span>
         <span class="chip">Afternoon</span>
         <span class="chip">White + wood</span>
         <span class="chip">No canopy</span>
@@ -300,7 +305,7 @@
         <ul class="prefs">
           <li>Wooden cross-back chairs, dark stain, tan / beige cushion.</li>
           <li>Sheer white drape, tied at the side, with one greenery sprig.</li>
-          <li>About 40 chairs plus 2–4 spare. Short rows either side of a petal aisle.</li>
+          <li>About 40–60 chairs plus 2–4 spare. Short rows either side of a petal aisle.</li>
           <li>Low white floral mounds along the chair line (Nikkah 03). Height lives in the arch, not in the aisle.</li>
           <li>White petals on the grass. No built carpet runner.</li>
         </ul>
@@ -360,7 +365,7 @@
       <table>
         <thead><tr><th>Element</th><th>Preference</th><th>Avoid</th></tr></thead>
         <tbody>
-          <tr><td>Chairs</td><td>Wood cross-back, tan cushion, sheer white drape + greenery. Quantity ≈ 40.</td><td>Gold chiavari, acrylic, throne chairs, ordering 200 matching chairs for nikkah</td></tr>
+          <tr><td>Chairs</td><td>Wood cross-back, tan cushion, sheer white drape + greenery. Quantity about 40–60.</td><td>Gold chiavari, acrylic, throne chairs, ordering a full 250 matching chairs for nikkah</td></tr>
           <tr><td>Partition / stage seating</td><td>White floral arch + hanging drop for the ceremony; two-seat sofa behind the arch with a chair on each side. Arch comes down at the end for necklaces + smoke.</td><td>Solid screen, gold frame, leaving the arch up through the necklace moment</td></tr>
           <tr><td>Aisle florals</td><td>Low white mounds + palm/greenery along the rows; scattered petals</td><td>Tall trumpets in the aisle, neon color</td></tr>
           <tr><td>Overhead</td><td>Open to nature, sky, and the garden backdrop. No fabric canopy.</td><td>Tent or sail over the nikkah rows. Calling the trees a ceiling.</td></tr>
@@ -372,9 +377,9 @@
     <section class="part part-mehndi" id="mehndi">
       <p class="eyebrow mehndi">Part 2</p>
       <h2>Mehndi</h2>
-      <p class="lede">Separate outdoor zone on the same farmhouse. About 200 guests. Built from 8–10 AM. Festive lounge + stage + dance floor. Color can follow the references or whatever Young Guns Events proposes in the same register.</p>
+      <p class="lede">Separate outdoor zone on the same farmhouse. About 250 guests. Built from 8–10 AM. Festive lounge + stage + dance floor. Color can follow the references or whatever Young Guns Events proposes in the same register.</p>
       <div class="chips">
-        <span class="chip">200 guests</span>
+        <span class="chip">About 250 guests</span>
         <span class="chip">Evening</span>
         <span class="chip">Own zone</span>
         <span class="chip">Cane lounge</span>
@@ -565,9 +570,9 @@
     <section>
       <h2>Still open</h2>
       <ul class="prefs">
-        <li>How many lounge sofas and vintage tables we can source for 200 guests.</li>
+        <li>How many lounge sofas and vintage tables we can source for about 250 guests.</li>
         <li>Whether the cane lounge chairs are available, and in what quantity.</li>
-        <li>How many of the 40 nikkah chairs, if any, walk to the mehndi tables after photos.</li>
+        <li>How many of the 40–60 nikkah chairs, if any, walk to the mehndi tables after photos.</li>
         <li>Vendor can supply pastel smoke, or only the saturated rainbow.</li>
         <li>Who holds the flower necklaces, and who is on smoke cue.</li>
         <li>Final mehndi palette: keep the reference colors, or take Young Guns’ suggestion.</li>
