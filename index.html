@@ -87,29 +87,26 @@
     .jumps a {
       font-weight: 800;
       text-decoration: none;
-      background: #2a2420;
       color: #fff;
       border-radius: 999px;
       padding: 8px 14px;
       font-size: 14px;
-      animation: jump-glow 1.8s ease-in-out infinite;
-      box-shadow: 0 0 0 0 rgba(42, 36, 32, 0.35);
-      will-change: transform, box-shadow;
+      animation: glow-teal 2.4s ease-in-out infinite;
     }
-    .jumps a:nth-child(1) { animation-name: jump-glow-ink; }
-    .jumps a:nth-child(2) { background: #c43d5a; animation-name: jump-glow-rose; animation-delay: 0.25s; }
-    .jumps a:nth-child(3) { background: #c46a3a; animation-name: jump-glow-amber; animation-delay: 0.5s; }
-    @keyframes jump-glow-ink {
-      0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(42, 36, 32, 0.25), 0 0 0 0 rgba(42, 36, 32, 0.2); }
-      50% { transform: scale(1.06); box-shadow: 0 0 0 8px rgba(42, 36, 32, 0.16), 0 0 22px 4px rgba(42, 36, 32, 0.45); }
+    .jumps a:nth-child(1) { background: #1f8a86; animation-name: glow-teal; }
+    .jumps a:nth-child(2) { background: #c43d5a; animation-name: glow-rose; animation-delay: 0.35s; }
+    .jumps a:nth-child(3) { background: #c46a3a; animation-name: glow-amber; animation-delay: 0.7s; }
+    @keyframes glow-teal {
+      0%, 100% { background: #1f8a86; box-shadow: 0 0 8px 0 rgba(120, 214, 208, 0.35); }
+      50% { background: #3ec4be; box-shadow: 0 0 18px 6px rgba(160, 236, 230, 0.85); }
     }
-    @keyframes jump-glow-rose {
-      0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(196, 61, 90, 0.25); }
-      50% { transform: scale(1.06); box-shadow: 0 0 0 8px rgba(196, 61, 90, 0.22), 0 0 22px 4px rgba(196, 61, 90, 0.65); }
+    @keyframes glow-rose {
+      0%, 100% { background: #c43d5a; box-shadow: 0 0 8px 0 rgba(232, 150, 168, 0.35); }
+      50% { background: #e56b84; box-shadow: 0 0 18px 6px rgba(255, 186, 198, 0.85); }
     }
-    @keyframes jump-glow-amber {
-      0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(196, 106, 58, 0.25); }
-      50% { transform: scale(1.06); box-shadow: 0 0 0 8px rgba(196, 106, 58, 0.22), 0 0 22px 4px rgba(196, 106, 58, 0.7); }
+    @keyframes glow-amber {
+      0%, 100% { background: #c46a3a; box-shadow: 0 0 8px 0 rgba(232, 176, 130, 0.35); }
+      50% { background: #e08a58; box-shadow: 0 0 18px 6px rgba(255, 210, 170, 0.85); }
     }
     .meta {
       display: flex; flex-wrap: wrap; gap: 8px;
