@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nikkah Schedule · Sumbal Chak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Fraunces:opsz,wght@9..144,560;9..144,650&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #2a2420;
+      --muted: #6f655c;
+      --paper: #f4efe8;
+      --card: #ffffff;
+      --accent: #1f8a86;
+      --shadow: 0 10px 30px rgba(70, 48, 28, 0.07);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Nunito, "Segoe UI", system-ui, sans-serif;
+      background:
+        radial-gradient(1200px 500px at 10% -10%, #f8e7d8 0%, transparent 55%),
+        radial-gradient(900px 420px at 100% 0%, #e4f0ea 0%, transparent 50%),
+        var(--paper);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    .wrap { max-width: 640px; margin: 0 auto; padding: 28px 16px 64px; }
+    header {
+      background: var(--card);
+      border-radius: 24px;
+      padding: 24px 22px 20px;
+      box-shadow: var(--shadow);
+      margin-bottom: 18px;
+    }
+    .eyebrow {
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--accent);
+      margin: 0 0 8px;
+    }
+    h1 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 32px;
+      font-weight: 560;
+      margin: 0 0 6px;
+      letter-spacing: -0.02em;
+    }
+    .lede { color: var(--muted); margin: 0; }
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 8px 0;
+      box-shadow: var(--shadow);
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 118px 1fr;
+      gap: 12px;
+      padding: 14px 20px;
+      border-bottom: 1px solid #f0e7db;
+    }
+    .row:last-child { border-bottom: 0; }
+    .time {
+      font-weight: 800;
+      color: var(--accent);
+      font-size: 14px;
+    }
+    .what { font-size: 15px; }
+    .what strong { font-weight: 800; }
+    .note {
+      margin: 16px 4px 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="eyebrow">Sumbal Chak · Lahore</p>
+      <h1>Nikkah</h1>
+      <p class="lede">A simple gathering.</p>
+    </header>
+
+    <div class="card">
+      <div class="row">
+        <div class="time">1:30 – 2:30 PM</div>
+        <div class="what">Couple photoshoot<br><span style="color:#6f655c;font-size:13px;">Suman Photography</span></div>
+      </div>
+      <div class="row">
+        <div class="time">3:00 – 4:30 PM</div>
+        <div class="what"><strong>Nikkah</strong></div>
+      </div>
+      <div class="row">
+        <div class="time">5:00 PM</div>
+        <div class="what">Food served</div>
+      </div>
+      <div class="row">
+        <div class="time">6:30 – 7:00 PM</div>
+        <div class="what">Guests leave</div>
+      </div>
+    </div>
+
+    <p class="note">Sumbal Chak farmhouse. Couple photos by Suman Photography before the Nikkah.</p>
+  </div>
+</body>
+</html>
